@@ -1,0 +1,53 @@
+let g:mapleader=' '
+let g:netrw_home=expand('~/.local/share/vim')
+set incsearch
+set hlsearch
+set autoread
+set cursorline
+set showcmd
+set number
+set relativenumber
+set numberwidth=1
+set mouse=a
+set breakindent
+set undofile
+set undodir=~/.local/state/vim/undo
+set ignorecase
+set smartcase
+set shiftwidth=4
+set softtabstop=-1
+set expandtab
+set smartindent
+set updatetime=250
+set timeoutlen=250
+set splitright
+set splitbelow
+set confirm
+set showtabline=0
+set laststatus=2
+set statusline=%F%m%r\ %=%l:%v
+set clipboard=unnamed
+set whichwrap=b,s,h,l,<,>,[,]
+set shortmess=ltToOCFsAIW
+set foldmethod=indent
+set nofoldenable
+set fillchars=eob:\ 
+call mkdir(g:netrw_home, 'p')
+call mkdir(expand(&undodir), 'p')
+syntax on
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <M-h> <C-w><
+map <M-l> <C-w>>
+map <M-k> <C-w>-
+map <M-j> <C-w>+
+map <leader>j <cmd>bnext<CR>
+map <leader>k <cmd>bprevious<CR>
+map <leader><leader> <cmd>buffer #<CR>
+map <leader>d <cmd>bprevious \| bdelete #<CR>
+map <leader>w <cmd>bprevious \| bwipeout #<CR>
+map ; <cmd>nohlsearch<CR>
+autocmd FileType lua set shiftwidth=2
+colorscheme wildcharm
