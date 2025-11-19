@@ -1,0 +1,8 @@
+font-family = SauceCodePro Nerd Font
+font-size = 14
+theme = Monokai Classic
+cursor-style = block
+fullscreen = true
+window-padding-color = extend
+shell-integration-features = no-cursor
+macos-option-as-alt = true
