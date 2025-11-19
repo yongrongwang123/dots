@@ -1,0 +1,11 @@
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "left": "vim::WrappingLeft",
+      "right": "vim::WrappingRight",
+      "h": "vim::WrappingLeft",
+      "l": "vim::WrappingRight"
+    }
+  }
+]
