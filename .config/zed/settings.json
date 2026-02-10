@@ -1,4 +1,9 @@
 {
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    }
+  },
   "theme": "Monokai-og",
   "buffer_font_family": "SauceCodePro Nerd Font",
   "buffer_font_size": 14.0,
@@ -16,6 +21,7 @@
     "breadcrumbs": false
   },
   "title_bar": {
+    "show_user_menu": false,
     "show_menus": false,
     "show_onboarding_banner": false,
     "show_user_picture": false,
@@ -66,7 +72,6 @@
     "diagnostics": false,
     "metrics": false
   },
-  "disable_ai": true,
   "git": {
     "git_gutter": "hide",
     "inline_blame": {
