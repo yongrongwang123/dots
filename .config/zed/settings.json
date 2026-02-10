@@ -1,4 +1,9 @@
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "disable_ai": true,
+  "zoomed_padding": false,
   "theme": "Monokai-og",
   "buffer_font_family": "SauceCodePro Nerd Font",
   "buffer_font_size": 14.0,
@@ -16,6 +21,7 @@
     "breadcrumbs": false
   },
   "title_bar": {
+    "show_user_menu": false,
     "show_menus": false,
     "show_onboarding_banner": false,
     "show_user_picture": false,
@@ -58,6 +64,7 @@
     "model_parameters": []
   },
   "tab_bar": {
+    "show_tab_bar_buttons": false,
     "show_nav_history_buttons": false
   },
   "format_on_save": "off",
@@ -66,7 +73,6 @@
     "diagnostics": false,
     "metrics": false
   },
-  "disable_ai": true,
   "git": {
     "git_gutter": "hide",
     "inline_blame": {

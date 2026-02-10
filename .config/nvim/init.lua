@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.g.java_ignore_javadoc = 1
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.numberwidth = 1
@@ -52,6 +53,13 @@ vim.api.nvim_create_autocmd('FileType', {
   group = vim.api.nvim_create_augroup('indent-file', { clear = true }),
   callback = function()
     vim.o.shiftwidth = 2
+  end,
+})
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'lua' },
+  group = vim.api.nvim_create_augroup('stop-treesitter', { clear = true }),
+  callback = function()
+    vim.treesitter.stop()
   end,
 })
 vim.cmd([[colorscheme wildcharm]])

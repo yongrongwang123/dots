@@ -1,7 +1,9 @@
 font-family = SauceCodePro Nerd Font
 font-size = 14
 theme = Monokai Classic
+cursor-color = #ffffff
 cursor-style = block
+cursor-text = #000000
 fullscreen = true
 window-padding-color = extend
 shell-integration-features = no-cursor
