@@ -1,0 +1,83 @@
+// -*- mode: jsonc -*-
+{
+    "spacing": 0,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "clock",
+        "custom/power"
+    ],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "active": "󱓻",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "0"
+        }
+    },
+    "tray": {
+        "icon-size": 12,
+        "spacing": 10
+    },
+    "pulseaudio": {
+        "tooltip": false,
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        }
+    },
+    "backlight": {
+        "tooltip": false,
+        "format": "{icon} {percent}%",
+        "scroll-step": 5,
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "tooltip": false,
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": "{icon} {capacity}%",
+        "format-discharging": "{icon} {capacity}%",
+        "format-plugged": "",
+        "format-icons": ["", "", "", "", ""],
+        "states": {
+            "warning": 20,
+            "critical": 10
+        }
+    },
+    "clock": {
+        "tooltip": false,
+        "format": "{:%a %b %d %H:%M}"
+    },
+    "custom/power": {
+        "tooltip": false,
+        "format" : "⏻ ",
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml",
+        "menu-actions": {
+            "shutdown": "systemctl poweroff",
+            "reboot": "systemctl reboot",
+            "suspend": "systemctl suspend"
+        }
+    }
+}
