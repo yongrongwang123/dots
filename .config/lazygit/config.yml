@@ -1,0 +1,10 @@
+gui:
+  theme:
+    selectedLineBgColor:
+      - '#272822'
+  nerdFontsVersion: 3
+  statusPanelView: allBranchesLog
+git:
+  diffRenderers:
+    - command: diff-so-fancy
+notARepository: skip
