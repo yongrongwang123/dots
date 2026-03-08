@@ -1,0 +1,10 @@
+gui:
+  theme:
+    selectedLineBgColor:
+      - black
+  nerdFontsVersion: 3
+  statusPanelView: allBranchesLog
+git:
+  pagers:
+    - pager: diff-so-fancy
+notARepository: skip
