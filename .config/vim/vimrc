@@ -1,0 +1,58 @@
+let g:mapleader=' '
+let g:netrw_home=expand('~/.local/share/vim')
+let g:java_ignore_javadoc=1
+set incsearch
+set hlsearch
+set autoread
+set showcmd
+set number
+set relativenumber
+set numberwidth=1
+set mouse=a
+set breakindent
+set undofile
+set undodir=~/.local/state/vim/undo
+set ignorecase
+set smartcase
+set shiftwidth=4
+set softtabstop=-1
+set expandtab
+set smartindent
+set updatetime=250
+set timeoutlen=250
+set splitright
+set splitbelow
+set confirm
+set showtabline=0
+set laststatus=2
+set statusline=%F%m%r\ %=%l:%v
+set clipboard=unnamed
+set whichwrap=b,s,h,l,<,>,[,]
+set shortmess=ltToOCFsAIW
+set foldmethod=indent
+set nofoldenable
+set fillchars=eob:\ 
+set termguicolors
+set cursorline
+set clipboard=""
+call mkdir(g:netrw_home, 'p')
+call mkdir(expand(&undodir), 'p')
+syntax on
+highlight LineNr guifg=#777777
+highlight CursorLineNr guifg=#eeeeee cterm=NONE
+highlight CursorLine guibg=#333333 cterm=NONE
+highlight StatusLine guifg=#eeeeee guibg=#000000 cterm=NONE
+highlight StatusLineNC guifg=#777777 guibg=#000000 cterm=NONE
+highlight VertSplit guifg=#000000 cterm=NONE
+map <C-w><C-h> <C-w><
+map <C-w><C-l> <C-w>>
+map <C-w><C-k> <C-w>-
+map <C-w><C-j> <C-w>+
+map <leader>j <cmd>bnext<CR>
+map <leader>k <cmd>bprevious<CR>
+map <leader><leader> <cmd>buffer #<CR>
+map <leader>d <cmd>bdelete<CR>
+map <leader>n <cmd>cnext<CR>
+map <leader>p <cmd>cprevious<CR>
+map ; <cmd>nohlsearch<CR>
+autocmd FileType lua set shiftwidth=2
