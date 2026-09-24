@@ -1,0 +1,4 @@
+@theme "/usr/share/rofi/themes/Monokai.rasi"
+configuration {
+    font: "SauceCodePro Nerd Font 11";
+}
