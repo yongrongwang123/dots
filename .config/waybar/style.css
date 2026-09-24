@@ -1,0 +1,22 @@
+* {
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+    font-family: SauceCodePro Nerd Font Propo;
+    font-size: 16px;
+}
+#workspaces button {
+  padding: 0 0;
+  margin: 0 5px;
+}
+#workspaces button.empty {
+  opacity: 0.5;
+}
+#wireplumber,
+#backlight,
+#battery,
+#clock,
+#tray,
+#workspaces {
+  margin: 0 10px;
+}
