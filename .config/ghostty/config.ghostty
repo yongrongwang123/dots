@@ -1,0 +1,16 @@
+font-family = SauceCodePro Nerd Font
+font-size = 15
+theme = Monokai Classic
+cursor-color = #ff0000
+cursor-text = cell-background
+cursor-style = block
+scrollbar = never
+window-save-state = always
+window-padding-x = 0
+window-padding-y = 0
+window-padding-color = extend
+quit-after-last-window-closed = true
+shell-integration-features = false
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+auto-update = off
